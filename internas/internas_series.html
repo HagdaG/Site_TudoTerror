@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>----------------</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/tudo_terror.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos, .galeria-elenco').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="internas_filmes.html">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="internas_livros.html">Livros</a></li>
+                        <li><a href="internas_jogos.html">Jogos</a></li>
+                        <li><a href="internas_trailers.html">Trailers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    </section>
+    <section id="series">
+        <div class="container">
+            <div>
+                <div id="categoria_01">
+                    <div class="categoria_01">
+                        <h2>American Horror Story – (2011)</h2>
+                        <p> • Plataforma de streaming: Netflix
+                            • Temporadas: 10 (113 episódios) - Em produção
+                            Criado por Ryan Murphy e Brad Falchuk, American Horror Story é um drama de antologia que
+                            redefiniu o gênero de terror apresentando contos que se passam desde um asilo assustador,
+                            coven de bruxas, show de horrores itinerante, um hotel assombrado e o próprio apocalipse.
+                        </p>
+                    </div>
+                    <div class="categoria_01"><img src="../imagens/series/01.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div id="categoria_01">
+                        <div class="categoria_01">
+                            <h2>Dark – (2017)</h2>
+                            <p> • Plataforma de streaming: Netflix
+                                • Temporadas: 3 (26 episódios) - Em produção
+                                Os mistérios sombrios de uma pequena cidade alemã são expostos quando duas crianças
+                                desaparecem. Enquanto as famílias procuram os dois desaparecidos, eles descobrem uma
+                                trama de indivíduos conectados com a história conturbada da cidade.
+                            </p>
+                        </div>
+                        <div class="categoria_01"><img src="../imagens/series/02.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="categoria_01">
+                            <div class="categoria_01">
+                                <h2>A Maldição da Residência Hill – (2018)</h2>
+                                <p> • Plataforma de streaming: Netflix
+                                    • Temporadas: 1 (10 episódios) - temporada 1 de série antológica
+                                    Entre o passado e o presente, uma família dividida confronta memórias assustadoras
+                                    do antigo lar e dos eventos aterrorizantes que os expulsaram de lá. Assista o quanto
+                                    quiser. A série assustadora é uma releitura moderna do romance de Shirley Jackson,
+                                    um clássico do terror gótico.
+                                </p>
+                            </div>
+                            <div class="categoria_01"><img src="../imagens/series/03.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="categoria_01">
+                                <div class="categoria_01">
+                                    <h2>Castle Rock– (2018)</h2>
+                                    <p> • Plataforma de streaming: Hulu / Starz Play
+                                        • Temporadas: 2 (20 episódios) - Cancelada após a segunda temporada
+                                        Um homem jovem retorna à Castle Rock, sua cidade Natal, e se vê perturbado com
+                                        seus mistérios.
+                                    </p>
+                                </div>
+                                <div class="categoria_01"><img src="../imagens/series/04.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div id="categoria_01">
+                                    <div class="categoria_01">
+                                        <h2>Marianne – (2019)</h2>
+                                        <p> • Plataforma de streaming: Netflix
+                                            • Temporadas: 1 (8 episódios) - Cancelada
+                                            De volta a sua cidade natal, uma famosa escritora de livros de terror
+                                            descobre que o espírito que atormenta seus sonhos está provocando o caos no
+                                            mundo real.
+                                        </p>
+                                    </div>
+                                    <div class="categoria_01"><img src="../imagens/series/05.jpg">
+                                    </div>
+                                </div>
+
+                            </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia <br>  Web  do  1º périodo  do curso
+            de Sistema de Informação do UniRios. <br> Por Hagda Gomes orientado pelo Professor Edemilton.</p><br>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

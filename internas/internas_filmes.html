@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>----------------</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/tudo_terror.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos, .galeria-elenco').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="internas_series.html">Séries</a></li>
+                        <li><a href="internas_livros.html">Livros</a></li>
+                        <li><a href="internas_jogos.html">Jogos</a></li>
+                        <li><a href="internas_trailers.html">Trailers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    </section>
+    <section id="filmes">
+        <div class="container">
+            <div>
+                <div id="categoria_01">
+                    <div class="categoria_01">
+                        <h2>Hereditário – (2018)</h2>
+                        <p>Após a morte da reclusa avó, a família Graham começa a desvendar algumas coisas. Mesmo após a
+                            partida da matriarca, ela permanece como se fosse uma sombra sobre a família, especialmente
+                            sobre a solitária neta adolescente, Charlie, por quem ela sempre manteve uma fascinação não
+                            usual. Com um crescente terror tomando conta da casa, a família explora lugares mais escuros
+                            para escapar do infeliz destino que herdaram.</p>
+                    </div>
+                    <div class="categoria_01"><img src="../imagens/filmes/01.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div id="categoria_01">
+                        <div class="categoria_01">
+                            <h2>A Bruxa – (2015)</h2>
+                            <p>Em uma fazenda no século 17, uma histeria religiosa toma conta de uma família que acusa a
+                                filha mais velha pelo desaparecimento do seu irmão ainda bebê.</p>
+                        </div>
+                        <div class="categoria_01"><img src="../imagens/filmes/02.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="categoria_01">
+                            <div class="categoria_01">
+                                <h2>Nós – (2019)</h2>
+                                <p>Adelaide e Gabe levam a família para passar um fim de semana na praia e descansar.
+                                    Eles começam a aproveitar o ensolarado local, mas a chegada de um grupo misterioso
+                                    muda tudo e a família se torna refém de seres com aparências iguais às suas.</p>
+                            </div>
+                            <div class="categoria_01"><img src="../imagens/filmes/03.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="categoria_01">
+                                <div class="categoria_01">
+                                    <h2>Invocação do Mal 3 – A Ordem do Demônio (2021)</h2>
+                                    <p>O casal Ed e Lorraine Warren investigam um assassino que alega ter sido possuído
+                                        por um demônio.</p>
+                                </div>
+                                <div class="categoria_01"><img src="../imagens/filmes/04.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div id="categoria_01">
+                                    <div class="categoria_01">
+                                        <h2>Alien, o Oitavo Passageiro – (1979)</h2>
+                                        <p>Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de
+                                            um asteroide. Enquanto a equipe investiga o local, um dos tripulantes é
+                                            atacado por um misterioso ser. O que parecia ser um ataque isolado se
+                                            transforma em um terror constante, pois o tripulante atacado levou para
+                                            dentro da nave o embrião de um alienígena, que não para de crescer e tem
+                                            como meta matar toda a tripulação.</p>
+                                    </div>
+                                    <div class="categoria_01"><img src="../imagens/filmes/05.jpg">
+                                    </div>
+                                </div>
+
+                            </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia <br>  Web  do  1º périodo  do curso
+            de Sistema de Informação do UniRios. <br> Por Hagda Gomes orientado pelo Professor Edemilton.</p><br>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

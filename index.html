@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>----------------</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="imagens/tudo_terror.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos, .galeria-elenco').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="imagens/wallpaper.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="internas/internas_filmes.html">Filmes</a></li>
+                        <li><a href="internas/internas_series.html">Séries</a></li>
+                        <li><a href="internas/internas_livros.html">Livros</a></li>
+                        <li><a href="internas/internas_jogos.html">Jogos</a></li>
+                        <li><a href="internas/internas_trailers.html">Trailers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    </section>
+    <section id="categorias">
+        <div class="container">
+            <div>
+                <div id="categoria_01">
+                    <div class="categoria_01">
+                        <h2>Gênero de Terror</h2>
+                        <p>O terror se trata do sentimento de medo de expectativa sobre algo, precedendo um
+                            acontecimento, ou seja, uma pessoa pode sentir medo de estar sozinha num local escuro, sendo
+                            que correm boatos de que ali uma pessoa foi assassinada. Por exemplo: o terror é algo comum
+                            em filmes quando o protagonista se encontra num local escuro e escute passos e sons de
+                            correntes sendo arrastadas, indicando que há alguém ali e que essa pessoa carrega algo que
+                            pode resultar numa experiência ruim para o protagonista. Ele precede uma experiência que
+                            será horrível.
+                            No caso dos filmes de terror, eles são produzidos a partir de coisas, pessoas ou situações
+                            que geram temor, quer aterrorizam. Inclusive, o termo “terrorista” tem a sua origem no termo
+                            “terror”. Quem vê um filme de terror terá um sentimento de pavor, tendo medo em diversos
+                            momentos ao longo do mesmo. E a pessoa sabe que ficará com medo até mesmo antes de se
+                            deparar com aquilo que é a razão desse seu pavor.
+                            .</p>
+                    </div>
+                    <div class="categoria_01"><img src="imagens/categoria_01.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div id="categoria_02">
+                        <div class="categoria_02"><img src="imagens/categoria_02.jpg">
+                        </div>
+                        <div class="categoria_02">
+                            <h2>Gênero de Horror</h2>
+                            <p>Por conseguinte, horror é quando há o sentimento de repulsa pelo que se vê, com a pessoa
+                                que se depara com a cena até mesmo congelando e quase tendo aniquiladas as suas
+                                faculdades humanas. Esse sentimento é provocado por algo que gera choque, podendo deixar
+                                uma pessoa sem reação, congelada e repleta de horror pelo que viu.
+                                O horror é causado por se deparar com algo horrendo, grotesco, muito assustador, onde se
+                                pode ter: abnormalidades físicas que sucedem de repente, como cenas de violência extra
+                                ou carnificina, por exemplo, onde filmes com cenas de canibalismo ou mutilações são
+                                exemplos comuns disso, gerando repugnância em quem as vê.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="categoria_03">
+                        <div class="categoria_03"><img src="imagens/categoria_03.jpg">
+                        </div>
+                        <div class="categoria_03">
+                            <h2>Gênero de Suspense</h2>
+                            <p>As obras de suspense são aquelas que provocam a hesitação da respiração do leitor/público
+                                uma vez que seu enredo é estruturado a partir de cortes repentinos, provocadores do
+                                susto. O inesperado e a surpresa são os elementos que atestam a razão de ser do gênero,
+                                afinal, não há como estabelecer o suspense com situações esperadas ou que já foram
+                                reveladas.
+                                A curiosidade humana é a engrenagem principal para que livros, filmes, peças e séries de
+                                suspense sejam tão populares. Desvendar enigmas ou solucionar casos, sempre desafia o
+                                imaginário e desperta interesse. Não à toa, muitos dos demais gêneros como o terror, o
+                                horror e as grandes sagas, comumente lançam mão dos artifícios do suspense.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="banners">
+        <div class="container">
+            <ul class="slider">
+                <li><img src="imagens/banners/banner_01.jpg"></li>
+                <li><img src="imagens/banners/banner_02.jpg"></li>
+                <li><img src="imagens/banners/banner_03.jpg"></li>
+            </ul>
+        </div>
+        <section id="fotos">
+            <div class="container">
+                <h2 class="titulo-secao">Não deixe de conferir :</h2>
+                <div id="galeria-fotos">
+                    <a href="imagens/fotos/fotosg/foto01.jpg" title="Foto 01"><img src="imagens/fotos/fotosp/foto01.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto02.jpg" title="Foto 02"><img src="imagens/fotos/fotosp/foto02.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto03.jpg" title="Foto 03"><img src="imagens/fotos/fotosp/foto03.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto04.jpg" title="Foto 04"><img src="imagens/fotos/fotosp/foto04.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto05.jpg" title="Foto 05"><img src="imagens/fotos/fotosp/foto05.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto06.jpg" title="Foto 06"><img src="imagens/fotos/fotosp/foto06.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto07.jpg" title="Foto 07"><img src="imagens/fotos/fotosp/foto07.jpg"
+                            alt=""></a>
+                    <a href="imagens/fotos/fotosg/foto08.jpg" title="Foto 08"><img src="imagens/fotos/fotosp/foto08.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia <br>  Web  do  1º périodo  do curso
+            de Sistema de Informação do UniRios. <br> Por Hagda Gomes orientado pelo Professor Edemilton.</p><br>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

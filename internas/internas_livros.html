@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>----------------</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/tudo_terror.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos, .galeria-elenco').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="internas_filmes.html">Filmes</a></li>
+                        <li><a href="internas_series.html">Séries</a></li>
+                        <li><a href="#">Livros</a></li>
+                        <li><a href="internas_jogos.html">Jogos</a></li>
+                        <li><a href="internas_trailers.html">Trailers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    </section>
+    <section id="livros">
+        <div class="container">
+            <div>
+                <div id="categoria_01">
+                    <div class="categoria_01">
+                        <h2>O bebê de Rosemary – (1967)</h2>
+                        <p> Autor: Ira Levin
+                            Um casal se muda para um prédio com pessoas estranhas. Acontecimentos ainda mais estranhos
+                            levam a jovem, que está grávida, a duvidar de sua própria sanidade. Porém, o parto e a
+                            descoberta de uma seita diabólica irão finalmente mostrar a verdade.
+
+                        </p>
+                    </div>
+                    <div class="categoria_01"><img src="../imagens/livros/01.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div id="categoria_01">
+                        <div class="categoria_01">
+                            <h2>O Exorcista – (1971)</h2>
+                            <p>Autor: William Peter Blatty
+                                O Exorcista é o título de um romance de terror, escrito pelo autor estadunidense William
+                                Peter Blatty, publicado pela editora americana Harper & Row e lançado originalmente em
+                                1971. O livro conta a história de Regan MacNeil, uma garota de 12 anos que é possuída
+                                pelo demônio.
+
+                            </p>
+                        </div>
+                        <div class="categoria_01"><img src="../imagens/livros/02.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="categoria_01">
+                            <div class="categoria_01">
+                                <h2>O Iluminado – (1977)</h2>
+                                <p> Autor: Stephen King
+                                    “O lugar perfeito para recomeçar”, é o que pensa Jack Torrance ao ser contratado
+                                    como zelador para o inverno. Hora de deixar para trás o alcoolismo, os acessos de
+                                    fúria, os repetidos fracassos. Isolado pela neve com a esposa e o filho, tudo o que
+                                    Jack deseja é um pouco de paz para se dedicar à escrita. Mas, conforme o inverno se
+                                    aprofunda, o local paradisíaco começa a parecer cada vez mais remoto... e mais
+                                    sinistro. Forças malignas habitam o Overlook, e tentam se apoderar de Danny
+                                    Torrance, um garotinho com grandes poderes sobrenaturais. Possuir o menino, no
+                                    entanto, se mostra mais difícil do que esperado. Então os espíritos resolvem se
+                                    aproveitar das fraquezas do pai.
+
+                                </p>
+                            </div>
+                            <div class="categoria_01"><img src="../imagens/livros/03.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="categoria_01">
+                                <div class="categoria_01">
+                                    <h2>O cemitério – (1983)</h2>
+                                    <p> Autor: Stephen King
+                                        Louis Creed, o protagonista desta história, descobre que existem segredos que
+                                        podem ser muito mais misteriosos e perturbadores do que a própria morte.
+
+                                    </p>
+                                </div>
+                                <div class="categoria_01"><img src="../imagens/livros/04.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <div id="categoria_01">
+                                    <div class="categoria_01">
+                                        <h2>A Coisa (It, em inglês) – (1986)</h2>
+                                        <p> Autor: Stephen King
+                                            Um dos livros mais cultuados (e assustadores) do mestre do horror, Stephen
+                                            King. A Coisa nos apresenta o medonho Pennywise (ou Parcimonioso, em
+                                            português), uma entidade demoníaca que assume a força de palhaço para caçar
+                                            e devorar crianças, o seu "prato" predileto.
+
+                                        </p>
+                                    </div>
+                                    <div class="categoria_01"><img src="../imagens/livros/05.jpg">
+                                    </div>
+                                </div>
+
+                            </div>
+    </section>
+
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia <br>  Web  do  1º périodo  do curso
+            de Sistema de Informação do UniRios. <br> Por Hagda Gomes orientado pelo Professor Edemilton.</p><br>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>
